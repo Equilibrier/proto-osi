@@ -15,7 +15,7 @@ The project includes a basic implementation of the OSI stack with attention to:
 
 - **Basic OSI Layers Implementation**: Focuses on network and transport layers with ongoing development.
 - **Protocol Simulation**: Simulates basic Ethernet Level 1+2 devices.
-- **Testing**: (for now, it includes basic internal tests for singleton, threading, and synchronization) @TODO Will include simulation tests for the implemented stack.
+- **Testing**: (for now, it includes basic internal tests for singleton, threading, and synchronization) @TODO It will include simulation tests for the implemented stack.
 
 ## Getting Started
 
