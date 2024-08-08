@@ -1,4 +1,4 @@
-# OSI Stack Implementation
+# (C++) OSI Stack Implementation
 
 This project demonstrates the implementation of a simplified OSI stack for academic purposes, focusing on core principles and basic protocols. The goal is to showcase understanding of network stack implementation with a basic, extendable approach in C/C++.
 
