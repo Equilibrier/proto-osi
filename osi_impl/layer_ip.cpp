@@ -30,13 +30,12 @@ void NetworkLayer::receive(iphdr* ip_packet, uint16_t totalSize) // compose frag
         return;
     }
     ip_packet->check = recv_csum;
-    
-    
 }
+
 void NetworkLayer::send(iphdr* ip_packet, uint16_t totalSize) // do fragmentation
 {
     // parse header & do fragmentation of the received message, by MTU limit, if the case
-    // parse header and read source & dest IPsm and then, for each fragment: 
+    // parse header and read source & dest IPs and then, for each fragment: 
         // do ARP and routing logic with possible rerouting logic taken into account
         // build dataframe header, reform the dataframe packet and send it to the lower level (dataframe), using the send(...) method
 
@@ -45,6 +44,6 @@ void NetworkLayer::send(iphdr* ip_packet, uint16_t totalSize) // do fragmentatio
         DataFrameSocket()
     }
     else {
-
+        
     }
 }

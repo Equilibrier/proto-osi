@@ -35,7 +35,9 @@ private:
     static NetworkParams* instance_;
     static std::mutex mutex_;
 
+    #ifdef TEST
     uint16_t mtu_;
+    #endif 
 };
 
 

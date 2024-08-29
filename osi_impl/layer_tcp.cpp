@@ -18,11 +18,11 @@ void TransportLayer::receive(tcphdr* tcp_packet, uint16_t totalSize)
     //    + TCP connection logic, if the case (three-handshake start connection packet or four-handshake end connection packet to be sent)
     // extract payload 
     // TCP packet composing; and continue only if complete packet is ready:
-        // send payload to next level
+        // send payload to next level, calling receive on IP level protocol instance
 }
 void TransportLayer::send(tcphdr* tcp_packet, uint16_t totalSize) 
 {
     // parse header & do segmention on the received packet by, MSS limit, if the case
     // then, for each segment:
-        // build dataframe header, reform the dataframe packet and send it to the lower level (dataframe), using the send(...) method
+        // build ip header, reform the ip packet and send it to the lower level (ip/network), using the send(...) method
 }
